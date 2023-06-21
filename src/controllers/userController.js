@@ -16,7 +16,7 @@ exports.createUser = async (req, res) => {
 };
 
 // get all users
-// GET /users?page=1&limit=10&name=John&email=john&sort=name:asc
+// GET /api/users?page=1&limit=10&name=John&email=john&sort=name:asc
 exports.getUsers = async (req, res) => {
     try {
         const { page = 1, limit = 10, name, email, sort } = req.query;
@@ -48,7 +48,6 @@ exports.getUsers = async (req, res) => {
         res.status(500).json({ error: 'Failed to retrieve users' });
     }
 };
-
 
 // get user by id
 exports.getUserById = async (req, res) => {
