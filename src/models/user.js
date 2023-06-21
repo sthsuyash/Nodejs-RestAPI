@@ -5,21 +5,22 @@ const sequelize = require('../models/database');
 const User = sequelize.define('User', {
     name: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false, // null is not allowed
     },
     email: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
         validate: {
-            isEmail: true,
+            isEmail: true, // will only allow email addresses
         },
     },
     phone: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-            isNumeric: true,
+            isNumeric: true, // will only allow numbers
+            len: [10, 10], // only allow values with length exactly 10
         },
     },
 });
