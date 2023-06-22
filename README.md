@@ -81,6 +81,25 @@ This API is documented using Postman. The Postman documentation link is : [https
 - [x] Unit tests are included using a testing framework like Jest to ensure the correctness of the API endpoints.
 - [x] A relational database 'PostgreSQL' is used to store the users and an ORM called 'Sequelize' is for database operations.
 
+## Architectural Decisions
+
+- The application is built using Node.js and the Express framework, providing a lightweight and efficient web server for handling API requests.
+- PostmanAPI is used for API documentation and specification. It provides a standardized format to describe the API endpoints, request/response payloads, and error codes.
+- The application follows a modular structure, separating concerns into different files and folders (controllers, routes, models, etc.), promoting code organization and maintainability.
+- Sequelize is used as an ORM (Object-Relational Mapping) library to interact with the database. It simplifies database operations and provides a higher-level abstraction for managing data.
+
+## Challenges Faced
+
+- Designing and implementing the database models and their relationships using Sequelize.
+- Ensuring proper error handling and providing meaningful error responses to API consumers.
+- Validating and sanitizing user input to prevent security vulnerabilities and data integrity issues.
+
+## Additional Features Implemented
+
+- Input Validation: Adding input validation to validate user input and prevent malicious data or malformed requests.
+- Logging: Adding logging functionality to capture important events and errors for debugging and monitoring purposes.
+- Pagination and Sorting: Implementing pagination and sorting functionality to handle large datasets returned by API endpoints.
+
 ## Author
 
 Suyash Shrestha
