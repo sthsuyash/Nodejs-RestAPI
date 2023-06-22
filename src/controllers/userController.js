@@ -42,7 +42,8 @@ exports.getUsers = async (req, res) => {
         }
 
         const users = await User.findAndCountAll(options);
-        res.json(users);
+        
+        res.status(200).json(users);
     } catch (error) {
         logger.error('Error creating user:', error);
         res.status(500).json({ error: 'Failed to retrieve users' });
@@ -59,7 +60,7 @@ exports.getUserById = async (req, res) => {
                 error: 'User not found'
             });
         } else {
-            res.json(user);
+            res.status(200).json(user);
         }
     } catch (error) {
         logger.error('Error creating user:', error);
