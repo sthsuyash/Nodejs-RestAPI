@@ -67,7 +67,7 @@ The API uses the Winston library to log information to the console and to a file
 
 ## API Documentation
 
-The API uses the Swagger library to generate API documentation. The API documentation is available at [http://localhost:3000/api-docs](http://localhost:3000/api-docs).
+This API is documented using Postman. The Postman documentation link is : [https://documenter.getpostman.com/view/20437995/2s93z58izE](https://documenter.getpostman.com/view/20437995/2s93z58izE)
 
 ## Tasks Performed
 
