@@ -15,11 +15,6 @@ const routes = require('./routes');
 // all routes will be prefixed with /api
 app.use('/api', routes);
 
-// import swagger
-const swagger = require('./swagger');
-// use swagger
-swagger(app);
-
 // function to start the server
 const startServer = () => {
     try {
