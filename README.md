@@ -49,18 +49,18 @@ This is a RESTful API that allows users to create, read, update, and delete user
 
 The API has the following endpoints:
 
-- POST /api/users - Creates a new contact.
+- POST /api/users - Creates a new user.
 - GET /api/users - Retrieves a list of all users.
-- GET /api/users/:id - Retrieves a single contact by its unique identifier.
-- PUT /api/users/:id - Updates an existing contact by its unique identifier.
-- DELETE /api/users/:id - Deletes a contact by its unique identifier.
+- GET /api/users/:id - Retrieves a single user by its unique identifier.
+- PUT /api/users/:id - Updates an existing user by its unique identifier.
+- DELETE /api/users/:id - Deletes a user by its unique identifier.
 
 The API uses the following data model:
 
-- id - The unique identifier for the contact.
-- name - The name of the contact.
-- email - The email address of the contact.
-- phone - The phone number of the contact.
+- id - The unique identifier for the user.
+- name - The name of the user.
+- email - The email address of the user.
+- phone - The phone number of the user.
 
 The API uses the following data validation rules:
 
@@ -75,10 +75,10 @@ The API uses the Jest testing framework to test the API endpoints. The API uses 
 The API has the following tests:
 
 - GET /api/users - Retrieves a list of all users.
-- GET /api/users/:id - Retrieves a single contact by its unique identifier.
-- POST /api/users - Creates a new contact.
-- PUT /api/users/:id - Updates an existing contact by its unique identifier.
-- DELETE /api/users/:id - Deletes a contact by its unique identifier.
+- GET /api/users/:id - Retrieves a single user by its unique identifier.
+- POST /api/users - Creates a new user.
+- PUT /api/users/:id - Updates an existing user by its unique identifier.
+- DELETE /api/users/:id - Deletes a user by its unique identifier.
 
 ## Logging
 
