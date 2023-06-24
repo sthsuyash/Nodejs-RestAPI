@@ -26,6 +26,12 @@ This is a RESTful API that allows users to create, read, update, and delete user
 
 5. Run `npm run dev` to start the server.
 
+## Using Docker
+
+1. Clone the repository.
+2. Run `docker-compose up -d` to start the server.
+3. Run `docker compose down` to stop the server.
+
 ## Usage
 
 The API has the following endpoints:

@@ -1,14 +1,19 @@
 const express = require('express');
 const app = express();
 
+// body parser middleware
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 // import SERVER constant from constants
 const { SERVER } = require('./constants');
 const PORT = SERVER.SERVER_PORT || 3000;
 
-// body-parser to parse incoming requests to req.body
-const bodyParser = require('body-parser');
-app.use(bodyParser.json());
-
+//test route
+app.get('/', (req, res, next) => {
+    res.send('<h1>Hello World</h1>');
+});
 
 // import api routes
 const routes = require('./routes');
