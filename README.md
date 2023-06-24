@@ -112,12 +112,14 @@ This API is documented using Postman. The Postman documentation link is : [https
 - Designing and implementing the database models and their relationships using Sequelize.
 - Ensuring proper error handling and providing meaningful error responses to API consumers.
 - Validating and sanitizing user input to prevent security vulnerabilities and data integrity issues.
+- Dockerizing the application and setting up the development environment.
 
 ## Additional Features Implemented
 
 - Input Validation: Adding input validation to validate user input and prevent malicious data or malformed requests.
 - Logging: Adding logging functionality to capture important events and errors for debugging and monitoring purposes.
 - Pagination and Sorting: Implementing pagination and sorting functionality to handle large datasets returned by API endpoints.
+- Docker: Adding Docker support to containerize the application and simplify the deployment process.
 
 ## Author
 
