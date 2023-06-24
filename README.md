@@ -12,13 +12,13 @@ This is a RESTful API that allows users to create, read, update, and delete user
 4. Create a .env file in the root directory of the project. The .env file should contain the following:
 
    ```bash
-   DB_HOST=db
-   DB_USER=database_user
-   DB_PASSWORD=database_password
-   SERVER_PORT=server_port
+   DB_HOST=localhost
+   DB_USER=<database_user>
+   DB_PASSWORD=<database_password>
+   SERVER_PORT=<server_port>
    ```
 
-   The **_'database_name'_**, **_'database_user'_**, **_'database_password'_**, and **_'database_host'_** should be replaced with the actual values for the database.
+   The **_'database_name'_**, **_'database_user'_** and **_'database_password'_** should be replaced with the actual values for the database.
 
    The server_port should be replaced with the port that the server
    will listen on. The server_port is 3000 by default.
@@ -32,12 +32,12 @@ This is a RESTful API that allows users to create, read, update, and delete user
 
    ```bash
    DB_HOST=db
-   DB_USER=database_user
-   DB_PASSWORD=database_password
-   SERVER_PORT=server_port
+   DB_USER=<database_user>
+   DB_PASSWORD=<database_password>
+   SERVER_PORT=<server_port>
    ```
 
-   The **_'database_name'_**, **_'database_user'_**, **_'database_password'_**, and **_'database_host'_** should be replaced with the actual values for the database.
+   The **_'database_name'_**, **_'database_user'_** and **_'database_password'_** should be replaced with the actual values for the database.
 
    The server_port should be replaced with the port that the server
    will listen on. The server_port is 3000 by default.
